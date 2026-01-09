@@ -1,0 +1,17 @@
+ Collection (E)
+ /       \
+List     Set
+可重複    不重複
+有順序性   沒有順序性
+//面試
+ArrayList 特性 資料丟進去後 異動不大
+Linklist 特性 資料丟進去 頻繁異動
+
+this本質 代表所在物件調用者的記憶體地址
+靜態只能調用靜態,非靜態可以調用所有,靜態方法沒有this
+static 靜態
+public 權限最大 取修飾詞 (Access Modifier)，用於定義類別、方法或變數的存取權限。
+@Override 父類無法滿足子類 故把父類再寫一遍 告訴虛擬機
+再把括弧內重寫
+
+io 網概 網路

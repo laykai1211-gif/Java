@@ -4,7 +4,7 @@ public class test {
     public static void main(String[] args) {
         try {
             // 嘗試將 10 除以 0 (ArithmeticException)
-            int result = 10 / 0;
+            int result = 10 / 250;
             System.out.println(result);
         } catch (ArithmeticException e) {
             // 捕獲並處理 ArithmeticException

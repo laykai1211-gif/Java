@@ -1,4 +1,4 @@
-package 接口.案例;
+package 介面interface.案例;
 
 public class ClassDataInterImpl1 implements ClassDataInter{
     private Student[] students;

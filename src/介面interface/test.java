@@ -1,4 +1,4 @@
-package 接口;
+package 介面interface;
 
 public class test {
     public static void main(String[] args) {

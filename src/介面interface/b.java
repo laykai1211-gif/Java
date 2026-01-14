@@ -1,4 +1,4 @@
-package 接口;
+package 介面interface;
 
 public interface b {
     void hey();

@@ -1,4 +1,4 @@
-package 接口;
+package 介面interface;
 
 public interface a {
     //定義常量 省略不加 public static final默認加上去

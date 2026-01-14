@@ -17,12 +17,14 @@ import javax.swing.JSlider;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import tw.brad.apis.MyClock;
 import tw.brad.apis.MyDrawer;
 
 public class MySign extends JFrame{
     private MyDrawer myDrawer;
-    private JButton clear, undo, redo, color, saveObj, loadObj,savejpeg;
+    private JButton clear, undo, redo, color, saveObj, loadObj, saveJpeg;
     private JSlider width;
+    private MyClock myClock;
 
     public MySign() {
         super("MySign");
@@ -38,16 +40,18 @@ public class MySign extends JFrame{
         color = new JButton("Color");
         saveObj = new JButton("Save Lines");
         loadObj = new JButton("Load Lines");
-        savejpeg = new JButton("save jpeg");
+        saveJpeg = new JButton("Save Jpeg");
         width = new JSlider(10, 200, 40);
+        myClock = new MyClock();
         top.add(clear); top.add(undo);top.add(redo);
         top.add(color);
-        top.add(savejpeg);
         top.add(saveObj); top.add(loadObj);
+        top.add(saveJpeg);
         top.add(width);
+        top.add(myClock);
         add(top, BorderLayout.NORTH);
 
-        setSize(800, 480);
+        setSize(1024, 480);
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -99,7 +103,7 @@ public class MySign extends JFrame{
                 loadLines();
             }
         });
-        savejpeg.addActionListener(new ActionListener() {
+        saveJpeg.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 myDrawer.saveJPEG();

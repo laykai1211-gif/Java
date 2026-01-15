@@ -13,7 +13,9 @@ public class Character {
             this.hp=0;
         }else if (hp>1000){
             this.hp=1000;
-        }else {this.hp=hp;}
+        }else {
+            this.hp=hp;
+        }
 
     }
 

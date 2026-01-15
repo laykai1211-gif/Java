@@ -1,20 +1,8 @@
-package 練習;
+package 練習3;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.util.Scanner;
-
-public abstract class product {
+public class Product {
     private String name;
     private double price;
-
-    public product(String name, double price) {
-        this.name = name;
-        this.price = price;
-    }
-
-    public product() {
-    }
 
     public String getName() {
         return name;
@@ -25,13 +13,24 @@ public abstract class product {
     }
 
     public double getPrice() {
+
         return price;
     }
 
     public void setPrice(double price) {
+        if(price<0){
+            System.out.println("錯誤");
+        }else {
         this.price = price;
+
+        }
     }
 
-    public abstract double calFinalPrice();
+    public Product(String name, double price) {
+        this.name = name;
+        setPrice(price);
+    }
 
+    public Product() {
+    }
 }

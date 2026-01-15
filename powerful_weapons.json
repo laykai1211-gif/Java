@@ -1,0 +1,9 @@
+[ {
+  "itemName" : "龍之大劍",
+  "power" : 150,
+  "type" : "武器"
+}, {
+  "itemName" : "雷神之鎚",
+  "power" : 200,
+  "type" : "武器"
+} ]

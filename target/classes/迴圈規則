@@ -1,0 +1,44 @@
+1. for 迴圈
+適用於已知執行次數的情況。
+語法： for (初始化; 條件; 迭代) { ... }
+範例： 列印 1 到 5。
+
+for (int i = 1; i <= 5; i++) {
+    System.out.println("次數: " + i);
+}
+
+2. while 迴圈
+適用於次數不確定，只要條件成立就繼續執行的情況。
+語法： while (條件) { ... }
+範例：
+
+int i = 1;
+while (i <= 5) {
+    System.out.println("次數: " + i);
+    i++;
+}
+
+
+3. do-while 迴圈
+與 while 相似，但保證至少會執行一次（先執行後檢查）。
+語法： do { ... } while (條件);
+範例：
+
+int i = 1;
+do {
+    System.out.println("至少執行一次");
+    i++;
+} while (i < 1);
+
+特殊用法與控制語句
+增強型 for 迴圈 (Enhanced for-loop / For-each):
+專門用於遍歷陣列（Array）或集合（Collection）。
+
+String[] fruits = {"蘋果", "香蕉", "橘子"};
+for (String fruit : fruits) {
+    System.out.println(fruit);
+}
+
+迴圈控制關鍵字：
+break: 立即跳出整個迴圈。
+continue: 跳過本次循環剩餘的程式碼，直接進入下一次迭代。

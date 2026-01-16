@@ -21,3 +21,6 @@ public 權限最大 取修飾詞 (Access Modifier)，用於定義類別、方法
 原本要在父類定義一個無意義方法在子類改寫，有了抽象，就強制子類重寫，好處是免得子類忘記重寫，不用糾結父類方法要寫甚麼
 
 io 網概 網路
+https://github.com/bradchao/eeit14
+
+https://github.com/djmdjm/jBCrypt/blob/master/src/org/mindrot/jbcrypt/BCrypt.java

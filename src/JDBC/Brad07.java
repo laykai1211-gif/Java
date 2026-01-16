@@ -14,7 +14,7 @@ import java.util.concurrent.ExecutorService;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class Brad06 {
+public class Brad07 {
     private static final String URL_OPENDATA = "https://data.moa.gov.tw/Service/OpenData/ODwsv/ODwsvAgriculturalProduce.aspx";
     private static final String URL = "jdbc:mysql://localhost:3306/iii";
     private static final String USER = "root";
@@ -107,8 +107,10 @@ public class Brad06 {
                     pstmt.setDouble(7, 0.0);
                 }
 
-                pstmt.executeUpdate();
+                pstmt.addBatch();
             }
+
+            pstmt.executeBatch();
 
         }
 

@@ -51,6 +51,7 @@ Install：放入自家櫥櫃（把成品存到電腦本地倉庫，供其他專�
 編譯打包    一鍵 mvn install 搞定
 
 
+dao 資料訪問對象 data access object
 https://github.com/bradchao/eeit14
 
 https://github.com/djmdjm/jBCrypt/blob/master/src/org/mindrot/jbcrypt/BCrypt.java

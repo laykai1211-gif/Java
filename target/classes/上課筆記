@@ -20,4 +20,38 @@ public 權限最大 取修飾詞 (Access Modifier)，用於定義類別、方法
 **有了抽象類，大家寫的格式都會統一了，在調用上才沒有問題
 原本要在父類定義一個無意義方法在子類改寫，有了抽象，就強制子類重寫，好處是免得子類忘記重寫，不用糾結父類方法要寫甚麼
 
-io 網概 網路
+Maven
+1.依賴管理 :只要在pom.xml寫下 xxx版本 maven就會從網路上載下來放到專案裡
+2.標準化專業結構 maven規定了java專案的資料夾應該怎麼排
+
+例如:
+src/main/java：放你的 Java 程式碼。
+src/main/resources：放設定檔（如資料庫連線資訊）。
+src/test/java：放測試用的程式碼。
+pom.xml：專案的靈魂檔案，記錄所有設定。
+優點： 任何工程師拿到你的專案，一看目錄就知道東西放哪，不需要重新適應。
+
+3. 專案生命週期 (Lifecycle) —— 「自動化流水線」
+這就是你之前使用的指令（如 mvn clean install）。Maven 把開發過程拆解成固定步驟：
+Clean：打掃廚房（刪除舊的編譯檔案）。
+Compile：開始做菜（將 Java 轉成電腦看的 .class 檔）。
+Test：試味道（跑自動化測試）。
+Package：裝盒（打包成一個 .jar 檔）。
+Install：放入自家櫥櫃（把成品存到電腦本地倉庫，供其他專案調用）。
+
+核心靈魂：pom.xml
+這個檔案（Project Object Model）是 Maven 的大腦，裡面記錄了：
+這個專案叫什麼名字。
+這個專案用了哪些外部套件（如 Spring Boot、MySQL 驅動）。
+你要用 Java 哪個版本（例如你之前改的 21）。
+
+使用 Maven (現代)
+找套件 在 pom.xml 寫一行字，Maven 自動下載
+專案結構    全世界統一格式，清爽好讀
+編譯打包    一鍵 mvn install 搞定
+
+
+dao 資料訪問對象 data access object
+https://github.com/bradchao/eeit14
+
+https://github.com/djmdjm/jBCrypt/blob/master/src/org/mindrot/jbcrypt/BCrypt.java

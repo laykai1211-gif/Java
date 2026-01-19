@@ -45,4 +45,9 @@ public class Member {
 
     public Member() {
     }
+
+    @Override
+    public  String toString(){
+        return  String.format("%s:%s:",email,name);
+    }
 }
